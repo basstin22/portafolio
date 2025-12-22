@@ -1,0 +1,46 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "2025",
+    title: "desarrollador web y diseñador web ",
+    company: "MOVIELMONTE SPA ",
+    description:
+      "desarrollo de paginas web funcional y un ERP completo que permite crear y gestionar facturas, cotizaciones, estados de vehículos, gastos de combustible, kilometrajes de conductores, estados de pago y gráficos. Propuesta de tecnologías que faciliten y optimicen las actividades facilitando el trabajo y permitiendo mejor gestión de documentos. Toda la información se almacena en una base de datos, accesible desde PC y dispositivos móviles. Para esto se utilizaron tecnologías como: React, nodejs,express, mongodb",
+    link: "https://youtu.be/pNZ-NcbyMok?si=BQ_KJCKaKFkCB5ux",
+  },
+  {
+    date: "2025",
+    title: "Desarrollador web freelance",
+    company: "Movimientos de Tierra DyC",
+    description:
+      "Diseño y desarrollo de sitio web corporativo con estructuración de páginas, layout visual, tipografías, iconos, imágenes, funciones como redirección directa a redes sociales y de contacto, prácticas de SEO básicas. Se utilizaron herramientas como: HTML, JavaScript, css, canva, inteligencia artificial para optimización de imágenes.",
+      link: "https://www.movimientosdetierradyc.com/",
+  },
+ {
+    date: "2024",
+    title: "Desarrollador web freelance",
+    company: "Áridos Montinos ",
+    description:
+      "diseño y desarrollo de web e interfaz clara definida por las necesidades del cliente, integración de herramientas que mejoran la interacción y permiten mejor visibilidad del producto, desarrollo de flujo de navegación simple para el cliente objetivo. Se utilizaron herramientas como: HTML, JavaScript, css, canva.",
+      link: "https://aridosmontinos.com/",
+  },
+    {
+    date: "2024",
+    title: "Junior Informatico",
+    company: "Contraplano",
+    description:
+      "generacion de videos diarios para sitio web y redes sociales, optimización de código para actualización y mejoramiento de la web, atención a clientes online, armado y mantenimiento de computadores, configuración y optimización de equipos, instalación de Windows y programas",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
